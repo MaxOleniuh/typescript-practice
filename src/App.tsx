@@ -1,10 +1,11 @@
-import React from 'react'
-import { Card } from './components/Card';
+import { Card, CardVariant } from './components/Card';
 
 const App = () => {
   return (
     <>
-      <Card width='200px' height='200px'/>   
+      <Card onClick={(num: number) => console.log('click', num)} variant={CardVariant.primary} width='200px' height='200px'>
+            <button>Click</button>
+      </Card>   
     </>
   )
 }
