@@ -5,6 +5,7 @@ import axios from 'axios';
 import UserItem from './components/UserItem';
 import List from './components/List';
 import TodoItem from './components/TodoItem';
+import EventsExample from './components/EventsExample';
 
 const App = () => {
   const [users, setUsers] = useState<IUser[]>([]);
@@ -32,6 +33,7 @@ const App = () => {
   }
   return (
     <>
+      <EventsExample />
       <Card variant={CardVariant.primary} width='200px' height='200px'>
             <button>Click</button>
       </Card> 
